@@ -23,10 +23,10 @@ header {
     color: #ecf0f1;
 }
 
-header nav li {
-    display: inline;
-    margin-left: 16px;
-    font-size: 18px;
+    header nav li {
+        display: inline;
+        margin-left: 16px;
+        font-size: 18px;
 }
 
 header nav li a {
@@ -40,6 +40,28 @@ header nav li a {
     width: 100%;
     margin: 0 auto;
 }
+
+.sst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sst article img {
+    /* height: 180px; */
+    width: 80%;
+}
+
+.sst article{
+    width: 25%;
+}
+.sst article h3{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+
+
 
 header .container,
 section .container {
@@ -61,7 +83,11 @@ section .container {
 }
 
 section {
-    padding: 24px 0;
+    padding: 24px   0;
+}
+
+section .destaque{
+    padding: 60px
 }
 
 section h2 {
@@ -135,4 +161,138 @@ footer {
     background-color: #0e6917;
     color: #ecf0f1;
     padding: 16px 0;
+}
+
+@media screen and (max-width: 640px){
+    header {
+    font-size: 1em;
+    }
+    
+    header nav li {
+        display: block;
+        font-size: 1em;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    .container  img{
+        width: 100%;
+    }
+
+    section .container {
+    display: block;
+    font-size: 1em;   
+    }
+
+    .contact-mothods {
+    display: block;   
+    }
+    .sst {
+    display: block;
+    }   
+
+    .sst button{
+    margin-bottom: 20px;
+    }
+
+    .sst article{
+    width: 100%;
+    }
+
+    .sst article h3{
+    margin-top: 0;
+    }
+
+    section .produtos{
+    display: block;
+    }
+    
+    .sst article img {
+    /* height: 180px; */
+    width: 100%;
+    }
+
+    .social-links li{
+    display: inline;
+    }
+
+    .social-links img {
+    width: 10%;
+    }
+
+    section .destaque{
+    padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1023px){
+    header {
+    font-size: 1em;
+    }
+    
+    header nav li {
+        display: block;
+        font-size: 1em;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    .container  img{
+        width: 100%;
+    }
+
+    section .container {
+    display: block;
+    font-size: 1em;   
+    }
+
+    .contact-mothods {
+    display: block;   
+    }
+    .sst {
+    display: flex;
+    }   
+
+    .sst button{
+    margin-bottom: 20px;
+    }
+
+    .sst article{
+    width: 48%;
+    
+    }
+
+    .sst article h3{
+    margin-top: 0;
+    }
+
+    section .produtos{
+    display: block;
+    }
+    
+    .sst article img {
+    /* height: 180px; */
+    width: 100%;
+    }
+
+    .social-links li{
+    display: inline;
+    }
+
+    .social-links img {
+    width: 50px;
+    }
+
+    section .destaque{
+    padding: 20px;
+    }
+
+    #contact .container{
+        display: block;
+        margin-left: 40px ;
+    }
+
 }
